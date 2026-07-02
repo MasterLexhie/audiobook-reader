@@ -82,9 +82,10 @@ When a user drops a file, the app reads it as an `ArrayBuffer` and passes it to 
 
 Works in any modern browser that supports the Web Speech API (Chrome, Firefox, Safari, Edge). Voice availability varies by browser and operating system — Chrome on desktop typically offers the widest selection. All file parsing and playback runs locally with no network dependency after the initial page load.
 
-## Contributing
+[//]: # (## Contributing)
 
-Fork the repo, create a feature branch, and open a pull request. The project follows a strict v1 scope defined in the product requirements document — features outside that scope are not being accepted yet. See [`audiobook-reader-prd.md`](./audiobook-reader-prd.md) for the full specification.
+[//]: # ()
+[//]: # (Fork the repo, create a feature branch, and open a pull request. The project follows a strict v1 scope defined in the product requirements document — features outside that scope are not being accepted yet. See [`audiobook-reader-prd.md`]&#40;./audiobook-reader-prd.md&#41; for the full specification.)
 
 ## License
 
