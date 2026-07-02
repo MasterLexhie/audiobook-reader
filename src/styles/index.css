@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, Menlo, monospace;
+
+  --color-bg: #f6f4ef;
+  --color-bg-alt: #f1eee7;
+  --color-surface: #fdfcf9;
+  --color-border: #e6e2d8;
+  --color-border-subtle: #eae6dc;
+  --color-text: #2b2926;
+  --color-text-secondary: #6d675d;
+  --color-text-muted: #8f887b;
+  --color-text-faint: #a39b8c;
+  --color-text-dim: #b3ab9c;
+  --color-accent: #8c6a4a;
+  --color-accent-tint: #efe3cf;
+  --color-active-bg: #f0e9dd;
+
+  --color-body: #3d3a34;
+  --color-hl-bg: #efe3cf;
+  --color-hl: #2b2926;
+  --color-done: #a39b8c;
+
+  --color-pill-bg: #2b2926;
+  --color-pill-text: #c9c2b4;
+  --color-pill-play-bg: #f6f4ef;
+  --color-pill-play-icon: #2b2926;
+  --color-pill-divider: rgba(246,244,239,0.18);
+  --color-pill-progress-track: rgba(246,244,239,0.22);
+  --color-pill-accent: #e8c891;
+  --color-pill-speed: #e8c891;
+  --color-pill-speed-border: rgba(232,200,145,0.35);
+
+  --color-cover-stripe-a: #efece4;
+  --color-cover-stripe-b: #f7f5ef;
+  --color-cover-border: #e0dbd0;
+  --color-cover-dark-stripe-a: #e8e3d8;
+  --color-cover-dark-stripe-b: #f0ece2;
+  --color-cover-dark-border: #ddd7c9;
+  --color-cover-text: #6d675d;
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-text-faint); }
+}
+
+@utility scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
