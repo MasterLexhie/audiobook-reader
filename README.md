@@ -3,7 +3,8 @@
 Turn any PDF or EPUB into an audiobook — entirely in your browser.
 
 <!-- TODO: Add a screenshot of the player screen to docs/screenshot.png -->
-![Audiobook Reader — Player Screen](./docs/screenshot.png)
+
+[//]: # (![Audiobook Reader — Player Screen]&#40;./docs/screenshot.png&#41;)
 
 ## What it does
 
