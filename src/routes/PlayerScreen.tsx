@@ -146,7 +146,7 @@ export default function PlayerScreen() {
         <div className="hidden max-sm:flex px-5 py-4 items-center gap-[10px]">
           <button
             onClick={handleBack}
-            className="flex items-center gap-[7px] text-xs text-text-muted bg-transparent border-none cursor-pointer"
+            className="flex items-center gap-[7px] text-[12px] text-text-muted bg-transparent border-none cursor-pointer min-w-[44px] min-h-[44px]"
           >
             <svg width="11" height="11" viewBox="0 0 12 12">
               <polygon points="8,1 3,6 8,11" fill="none" stroke="currentColor" strokeWidth="1.5" />
@@ -156,7 +156,7 @@ export default function PlayerScreen() {
           <div className="flex-1 text-center font-serif font-semibold text-[12.5px] text-text">
             {state.fileName.replace(/\.[^.]+$/, '')}
           </div>
-          <div className="font-mono text-[10.5px] text-text-dim">
+          <div className="font-mono text-[12px] text-text-dim">
             {state.currentChapterIndex + 1}/{state.chapters.length}
           </div>
         </div>

@@ -31,9 +31,9 @@ export default function PageListItem({ chapter, isActive, duration, onClick }: P
         </div>
       </div>
       {isActive ? (
-        <div className="font-medium text-[11.5px] text-accent whitespace-nowrap max-sm:text-[11px]">Now playing</div>
+        <div className="font-medium text-[11.5px] text-accent whitespace-nowrap max-sm:text-[12px]">Now playing</div>
       ) : (
-        <div className="text-[11.5px] text-text-dim max-sm:text-[11px]">{duration}</div>
+        <div className="text-[11.5px] text-text-dim max-sm:text-[12px]">{duration}</div>
       )}
     </div>
   );

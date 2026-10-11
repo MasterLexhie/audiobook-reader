@@ -26,7 +26,7 @@ export default function ProgressBar({ current, total, label, onClick }: Props) {
           style={{ width: `${pct}%` }}
         />
       </div>
-      <div className="flex justify-between font-mono text-[9.5px] text-text-faint">
+      <div className="flex justify-between font-mono text-[9.5px] text-text-faint max-sm:text-[12px]">
         <span>{current + 1}/{total}</span>
         <span>{label}</span>
       </div>

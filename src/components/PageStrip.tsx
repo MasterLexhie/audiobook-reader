@@ -28,7 +28,7 @@ export default function PageStrip({ chapters, activeIndex, fileType, onSelect }:
           ref={i === activeIndex ? activeRef : null}
           onClick={() => onSelect(i)}
           className={`font-serif text-[13px] py-2 px-[2px] pb-[10px] whitespace-nowrap cursor-pointer
-            border-b-[2.5px] transition-colors
+            border-b-[2.5px] transition-colors max-sm:min-h-[44px] max-sm:min-w-[44px] max-sm:flex max-sm:items-center max-sm:justify-center
             ${i === activeIndex
               ? 'font-semibold text-text border-b-accent'
               : 'text-text-muted border-b-transparent hover:text-text-secondary'

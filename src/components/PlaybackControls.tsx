@@ -113,7 +113,7 @@ export default function PlaybackControls(props: Props) {
       {/* Mobile pill */}
       <div className="flex sm:hidden fixed left-3.5 right-3.5 bottom-4
         bg-pill-bg rounded-[22px] shadow-[0_10px_30px_rgba(43,41,38,.35)]
-        px-5 py-4 flex-col gap-3.5 z-50">
+        px-5 py-4 pb-[calc(1rem+env(safe-area-inset-bottom))] flex-col gap-3.5 z-50">
         <ProgressBar
           current={props.currentSentence}
           total={props.totalSentences}
@@ -123,7 +123,7 @@ export default function PlaybackControls(props: Props) {
         <div className="flex items-center justify-between">
           <SpeedSelector speed={props.speed} onChange={props.onSpeedChange} bordered />
           <div className="flex items-center gap-[18px]">
-            <button onClick={props.onSkipBack} className="flex items-center gap-[2px] font-semibold text-[9.5px] text-pill-text bg-transparent border-none cursor-pointer hover:opacity-70">
+            <button onClick={props.onSkipBack} className="flex items-center justify-center gap-[2px] font-semibold text-[12px] text-pill-text bg-transparent border-none cursor-pointer hover:opacity-70 min-w-[44px] min-h-[44px]">
               <SkipBackIcon /><span>5</span>
             </button>
             <button
@@ -137,7 +137,7 @@ export default function PlaybackControls(props: Props) {
                 </div>
               ) : <PlayIcon />}
             </button>
-            <button onClick={props.onSkipForward} className="flex items-center gap-[2px] font-semibold text-[9.5px] text-pill-text bg-transparent border-none cursor-pointer hover:opacity-70">
+            <button onClick={props.onSkipForward} className="flex items-center justify-center gap-[2px] font-semibold text-[12px] text-pill-text bg-transparent border-none cursor-pointer hover:opacity-70 min-w-[44px] min-h-[44px]">
               <span>5</span><SkipForwardIcon />
             </button>
           </div>

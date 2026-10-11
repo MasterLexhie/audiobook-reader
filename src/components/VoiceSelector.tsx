@@ -6,7 +6,7 @@ interface Props {
 
 export default function VoiceSelector({ voices, selectedVoice, onChange }: Props) {
   return (
-    <div className="relative flex items-center gap-[5px] text-pill-text text-[11px] cursor-pointer">
+    <div className="relative flex items-center gap-[5px] text-pill-text text-[11px] cursor-pointer max-sm:min-h-[44px]">
       <select
         value={selectedVoice?.name ?? ''}
         onChange={(e) => {
@@ -14,7 +14,7 @@ export default function VoiceSelector({ voices, selectedVoice, onChange }: Props
           if (voice) onChange(voice);
         }}
         className="appearance-none bg-transparent border-none text-inherit text-[11px] cursor-pointer
-          pr-4 outline-none"
+          pr-4 outline-none max-sm:text-[14px]"
       >
         {voices.map((v) => (
           <option key={v.name} value={v.name}>

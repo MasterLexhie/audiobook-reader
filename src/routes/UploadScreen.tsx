@@ -36,11 +36,11 @@ export default function UploadScreen() {
         {/* Hero */}
         <div className="flex-[1.1] px-14 py-14 flex flex-col justify-center gap-[18px] border-r border-border
           max-sm:flex-none max-sm:px-0 max-sm:pt-6 max-sm:pb-0 max-sm:border-r-0 max-sm:gap-3.5">
-          <div className="font-mono text-xs text-accent tracking-[.14em]">AUDIOBOOK READER</div>
+          <div className="font-mono text-xs text-accent tracking-[.14em] max-sm:text-[12px]">AUDIOBOOK READER</div>
           <h1 className="font-serif font-semibold text-[40px] leading-[1.12] text-text text-balance max-sm:text-[32px] max-sm:leading-[1.15]">
             Every book you own, read aloud.
           </h1>
-          <p className="text-[15px] leading-relaxed text-text-secondary max-w-[340px] max-sm:text-sm">
+          <p className="text-[15px] leading-relaxed text-text-secondary max-w-[340px] max-sm:text-[13px]">
             Drop in any PDF or EPUB and listen with sentence-by-sentence narration. Free, instant, and entirely in your browser.
           </p>
           <div className="flex gap-4 text-xs text-text-muted mt-1.5 max-sm:hidden">
@@ -63,7 +63,7 @@ export default function UploadScreen() {
       )}
 
       {/* Mobile bottom features */}
-      <div className="hidden max-sm:flex justify-center gap-3.5 text-[11.5px] text-text-muted px-[30px] pb-10">
+      <div className="hidden max-sm:flex justify-center gap-3.5 text-[12px] text-text-muted px-[30px] pb-10">
         <span>No account</span><span>·</span>
         <span>No servers</span><span>·</span>
         <span>No setup</span>

@@ -59,7 +59,7 @@ export default function DropZone({ onFileSelect }: Props) {
       </div>
       <button
         className="bg-text text-bg font-medium text-[13px] px-[26px] py-3 rounded-[3px] tracking-wide
-          hover:opacity-85 transition-opacity cursor-pointer max-sm:px-[30px] max-sm:py-3.5 max-sm:text-[13.5px]"
+          hover:opacity-85 transition-opacity cursor-pointer max-sm:px-[30px] max-sm:py-3.5 max-sm:text-[14px] max-sm:min-h-[48px]"
         onClick={(e) => {
           e.stopPropagation();
           inputRef.current?.click();

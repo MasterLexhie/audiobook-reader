@@ -17,7 +17,7 @@ export default function SpeedSelector({ speed, onChange, bordered }: Props) {
     <button
       onClick={cycle}
       className={`font-semibold text-[12px] text-pill-speed cursor-pointer transition-opacity hover:opacity-70
-        ${bordered ? 'border border-pill-speed-border px-[10px] py-2 rounded-2xl' : 'bg-transparent border-none'}`}
+        ${bordered ? 'border border-pill-speed-border px-[10px] py-2 rounded-2xl max-sm:min-w-[44px] max-sm:min-h-[44px]' : 'bg-transparent border-none'}`}
     >
       {speed}×
     </button>

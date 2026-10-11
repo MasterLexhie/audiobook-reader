@@ -48,7 +48,7 @@ export default function ContentsScreen() {
 
   return (
     <div className="min-h-dvh flex flex-col bg-bg relative">
-      <div className="flex-1 flex min-h-0">
+      <div className="flex-1 flex min-h-0 max-sm:flex-col">
         {/* Desktop sidebar */}
         <div className="w-[250px] border-r border-border p-[32px_26px] flex flex-col gap-[18px] bg-bg-alt max-sm:hidden">
           <div
@@ -98,7 +98,7 @@ export default function ContentsScreen() {
           <div className="flex flex-col gap-[5px]">
             <div className="font-serif font-semibold text-[19px] leading-tight text-text">{displayName}</div>
             <div className="text-[12.5px] text-text-muted">{typeLabel}</div>
-            <div className="text-[11.5px] text-text-secondary">
+            <div className="text-[12px] text-text-secondary">
               {state.chapters.length} {chapterLabel} · {formatTime(words)} · {words.toLocaleString()} words
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function ContentsScreen() {
         <div className="flex-1 flex flex-col min-h-0">
           <div className="flex items-center gap-3 px-[30px] pt-6 pb-3.5 border-b border-border
             max-sm:px-6 max-sm:pt-3.5 max-sm:pb-2">
-            <div className="font-semibold text-[13px] text-text tracking-[.06em] max-sm:text-xs">CONTENTS</div>
+            <div className="font-semibold text-[13px] text-text tracking-[.06em] max-sm:text-[12px]">CONTENTS</div>
             <SearchBar value={search} onChange={setSearch} />
           </div>
           <PageList
@@ -121,15 +121,22 @@ export default function ContentsScreen() {
       </div>
 
       {/* Mobile play bar */}
-      <div className="hidden max-sm:block fixed left-6 right-6 bottom-5">
+      <div className="hidden max-sm:flex fixed left-6 right-6 bottom-5 pb-[env(safe-area-inset-bottom)] flex-col gap-2.5">
         <button
           onClick={handlePlayFromStart}
           className="w-full flex items-center justify-center gap-2 bg-accent text-surface
-            font-medium text-sm py-[15px] rounded-[3px] border-none cursor-pointer
+            font-medium text-[14px] py-[15px] rounded-[3px] border-none cursor-pointer
             shadow-[0_8px_24px_rgba(60,50,35,.22)]"
         >
           <svg width="9" height="10" viewBox="0 0 9 10"><polygon points="0,0 9,5 0,10" fill="currentColor" /></svg>
           Play from start
+        </button>
+        <button
+          onClick={handleChangeBook}
+          className="w-full text-center text-text-muted text-[13px] py-[10px] border border-cover-dark-border
+            rounded-[3px] bg-surface cursor-pointer hover:bg-bg-alt transition-colors"
+        >
+          Change book
         </button>
       </div>
     </div>
