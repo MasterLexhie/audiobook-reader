@@ -1,10 +1,9 @@
 # Audiobook Reader
 
 Turn any PDF or EPUB into an audiobook — entirely in your browser.
+**Live demo:** [Try Audiobook Reader](https://audiobook-reader-kappa.vercel.app/)
 
-<!-- TODO: Add a screenshot of the player screen to docs/screenshot.png -->
-
-[//]: # (![Audiobook Reader — Player Screen]&#40;./docs/screenshot.png&#41;)
+![Audiobook Reader player screen](./docs/player-screen.png)
 
 ## What it does
 
@@ -21,6 +20,16 @@ npm run dev
 ```
 
 Open `http://localhost:5173` in your browser.
+
+## Testing
+
+Run the automated tests:
+
+```bash
+npm test
+```
+
+Current coverage focuses on text-processing logic, including sentence splitting. PDF and EPUB parsing rely on browser-oriented libraries and are not covered in this initial test suite.
 
 ## Features
 
